@@ -613,111 +613,202 @@
 
 ## 補足資料
 
+### 索引
+- アルファベット順インデックス
+  - Angular関連用語
+  - JavaScript/TypeScript用語
+  - 一般的な開発用語
+- カテゴリー別インデックス
+  - コンポーネント関連
+  - サービス関連
+  - ルーティング関連
+  - フォーム関連
+  - テスト関連
+- 機能別インデックス
+  - データバインディング
+  - 依存性注入
+  - ライフサイクルフック
+  - デコレータ
+
 ### 用語集
-- JavaScript/TypeScript用語
 - Angular固有の用語
+  - コンポーネント（Component）
+  - サービス（Service）
+  - モジュール（Module）
+  - ディレクティブ（Directive）
+  - パイプ（Pipe）
+  - デコレータ（Decorator）
+  - 依存性注入（Dependency Injection）
+  - ルーティング（Routing）
+  - ガード（Guard）
+  - リゾルバ（Resolver）
+
+- JavaScript/TypeScript用語
+  - 変数（Variable）
+  - 関数（Function）
+  - クラス（Class）
+  - インターフェース（Interface）
+  - 型（Type）
+  - ジェネリクス（Generics）
+  - Promise
+  - Observable
+  - async/await
+  - モジュール（Module）
+
 - 開発全般の用語
+  - Git関連用語
+  - CI/CD関連用語
+  - テスト関連用語
+  - デバッグ関連用語
+  - パフォーマンス関連用語
 
 ### チートシート
-- コマンド一覧
-- よく使う構文
+- Angular CLI コマンド
+  ```bash
+  # プロジェクト作成
+  ng new [プロジェクト名]
+
+  # コンポーネント生成
+  ng generate component [名前]
+  ng g c [名前]
+
+  # サービス生成
+  ng generate service [名前]
+  ng g s [名前]
+
+  # モジュール生成
+  ng generate module [名前]
+  ng g m [名前]
+
+  # ビルドコマンド
+  ng build
+  ng build --prod
+
+  # 開発サーバー起動
+  ng serve
+  ng serve --port [ポート番号]
+  ```
+
+- npm コマンド
+  ```bash
+  # パッケージインストール
+  npm install
+  npm i
+
+  # 開発用パッケージインストール
+  npm install --save-dev [パッケージ名]
+  npm i -D [パッケージ名]
+
+  # グローバルインストール
+  npm install -g [パッケージ名]
+
+  # パッケージ更新
+  npm update
+  npm update [パッケージ名]
+
+  # スクリプト実行
+  npm run [スクリプト名]
+  ```
+
+- Git コマンド
+  ```bash
+  # リポジトリ初期化
+  git init
+
+  # ファイルの追加
+  git add .
+  git add [ファイル名]
+
+  # コミット
+  git commit -m "メッセージ"
+
+  # ブランチ操作
+  git branch [ブランチ名]
+  git checkout [ブランチ名]
+  git checkout -b [ブランチ名]
+
+  # リモート操作
+  git push origin [ブランチ名]
+  git pull origin [ブランチ名]
+  ```
+
 - デバッグ手順
+  1. Console APIの使用
+     ```typescript
+     console.log('データ:', data);
+     console.warn('警告メッセージ');
+     console.error('エラーメッセージ');
+     console.table(arrayData);
+     ```
+
+  2. デバッガーの使用
+     ```typescript
+     debugger;
+     // ブレークポイントが設定される
+     ```
+
+  3. エラーハンドリング
+     ```typescript
+     try {
+       // 危険な処理
+     } catch (error) {
+       console.error('エラー:', error);
+     }
+     ```
 
 ### 参考リソース
-- 公式ドキュメント
-- コミュニティリソース
-- 推奨書籍/サイト
 
-## 4. 特徴的な要素
-- 初心者向けの丁寧な解説
-  - 基本的な概念から段階的に説明
-  - 図解やイラストを使用した視覚的な解説
-  - 実際のユースケースに基づく例示
-- Angular開発での実際の使用例
-  - コンポーネントでの実装例
-  - サービスでの実装例
-  - 実践的なエラーハンドリング
-- 豊富なコメント付きのコード例
-  - 行ごとの詳細な説明
-  - なぜそのコードを書くのかの解説
-  - 代替実装との比較
-- つまずきやすいポイントの解説
-  - よくある間違いとその対処法
-  - デバッグのヒント
-  - ベストプラクティス
-- TypeScriptのエラーメッセージ対応
-  - 一般的なエラーの意味
-  - エラーの解決方法
-  - 型定義のデバッグ方法
+#### 公式ドキュメント
+- [Angular 公式ドキュメント](https://angular.io/docs)
+- [TypeScript 公式ドキュメント](https://www.typescriptlang.org/docs/)
+- [RxJS 公式ドキュメント](https://rxjs.dev/guide/overview)
 
-## 5. 提供形式
-- Markdownベースのドキュメント
-  - 目次と索引
-  - キーワード検索
-  - コードのシンタックスハイライト
-- 実際のAngularプロジェクトに基づく例
-  - 段階的な実装例
-  - 実践的なユースケース
-  - 完全なソースコード
-- コメント付きのサンプルコード
-  - 詳細な説明コメント
-  - エッジケースの考慮
-  - テストコード
-- 補足説明用の図解資料
-  - 概念の視覚化
-  - フローチャート
-  - アーキテクチャ図
+#### コミュニティリソース
+- Stack Overflow
+  - [Angular タグ](https://stackoverflow.com/questions/tagged/angular)
+  - [TypeScript タグ](https://stackoverflow.com/questions/tagged/typescript)
+- GitHub
+  - [Angular リポジトリ](https://github.com/angular/angular)
+  - [TypeScript リポジトリ](https://github.com/microsoft/TypeScript)
 
-## 6. 品質管理
-- わかりやすい日本語での解説
-  - 専門用語の平易な説明
-  - 具体例を用いた解説
-  - 段階的な説明
-- 実際のAngularプロジェクトでの動作確認
-  - すべてのコード例の動作確認
-  - 異なる環境での検証
-  - エッジケースのテスト
-- 初心者目線でのレビュー
-  - 説明の分かりやすさ
-  - 前提知識の適切さ
-  - 躓きやすいポイントの網羅
-- エラーパターンと解決方法の収集
-  - 一般的なエラーの対処法
-  - デバッグ手順
-  - トラブルシューティングガイド
+#### 推奨書籍
+- 入門書
+  - 『Angular入門』
+  - 『TypeScriptプログラミング』
+  - 『JavaScriptモダンプログラミング完全ガイド』
 
-## 7. 今後の展開
-- Angular開発でよくある質問（FAQ）の追加
-  - 実践的な問題と解決策
-  - ベストプラクティス
-  - パフォーマンス最適化
-- バージョンアップへの対応
-  - 新機能の解説
-  - 破壊的変更への対応
-  - マイグレーションガイド
-- より実践的なユースケースの追加
-  - 実務での使用例
-  - デザインパターン
-  - アーキテクチャ設計
-- コミュニティからのフィードバック反映
-  - ユーザーの質問対応
-  - 内容の改善と更新
-  - 新しいユースケースの追加
+- 実践書
+  - 『実践Angular』
+  - 『Angularアプリケーション開発ガイド』
+  - 『テスト駆動開発でAngularアプリを作る』
 
-## 8. 検討事項
-- Angular特有の機能と基本文法の解説バランス
-  - 基礎知識の充実度
-  - 実践的な内容の比重
-  - 説明の詳細度
-- サンプルプロジェクトの規模と複雑さ
-  - 初心者向けの簡単な例
-  - 実践的な規模の例
-  - 段階的な学習構成
-- エラーパターンの収集範囲
-  - 一般的なエラー
-  - 環境依存のエラー
-  - 実行時エラー
-- バージョンアップへの対応方針
-  - 更新頻度
-  - 互換性の維持
-  - 新機能の追加方法 
+#### オンラインリソース
+- チュートリアル
+  - [Angular Tour of Heroes](https://angular.io/tutorial)
+  - [TypeScript Playground](https://www.typescriptlang.org/play)
+  - [RxJS Playground](https://rxjs.dev/operator-decision-tree)
+
+- ブログ・記事
+  - [Angular Blog](https://blog.angular.io/)
+  - [TypeScript Blog](https://devblogs.microsoft.com/typescript/)
+
+- コースとトレーニング
+  - Udemy
+  - Pluralsight
+  - egghead.io
+
+#### 開発ツール
+- エディタ/IDE
+  - Visual Studio Code
+  - WebStorm
+  - Sublime Text
+
+- 開発支援ツール
+  - Angular DevTools
+  - Chrome DevTools
+  - Augury
+
+- パフォーマンス最適化ツール
+  - Lighthouse
+  - WebPageTest
+  - Angular Bundle Analyzer 
